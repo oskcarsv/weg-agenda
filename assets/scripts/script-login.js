@@ -18,8 +18,13 @@ form.addEventListener("submit", (event) => {
   if (enteredEmail === defaultUser.email && enteredPassword === defaultUser.password) {
     window.location.href = "contact.html";
   } else {
-
+    form.appendChild(document.createElement("br"));
     form.appendChild(errorElement);
-    errorElement.textContent = "Credenciales incorrectas. Por favor, inténtalo de nuevo.";
+    errorElement.style.textAlign = "center";
+    errorElement.textContent = "Incorrect credentials. Please try again.";
+
+    setTimeout(() => {
+      errorElement.remove();
+    }, 1000);
   }
 });
