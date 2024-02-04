@@ -68,29 +68,48 @@ header {
 
 .label-form {
     font-family: var(--primary-font);
-    font-size: 15px;
+    font-size: 20px;
     color: var(--blue);
 }
 
 .input-form {
+    height: 25px;
+    background-color: var(--green);
+    font-family: var(--primary-font);
+    font-size: 10px;
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--sky-blue);
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
 }
 
 .button-form {
     background-color: var(--blue);
     color: var(--beige);
+    width: 150px;
+    height: 50px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-family: var(--secondary-font);
 }
 
 .button-form:hover {
+    color: var(--blue);
     background-color: var(--green);
+}
+
+.s-login {
+    width: 100%;
+}
+
+.container-username,
+.container-password {
+    margin-bottom: 30px;
 }
