@@ -76,8 +76,8 @@ header {
     height: 25px;
     background-color: var(--green);
     font-family: var(--primary-font);
-    font-size: 10px;
-    width: 100%;
+    font-size: 12px;
+    width: 400px;
     padding: 10px;
     border: none;
     border-radius: 15px;
@@ -111,5 +111,9 @@ header {
 
 .container-username,
 .container-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
