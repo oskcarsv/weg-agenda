@@ -35,13 +35,18 @@
 
 .sidebar #btn {
     position: absolute;
-    color: #fff;
     top: .4rem;
     left: 50%;
     font-size: 1.2rem;
     line-height: 50px;
     transform: translateX(-50%);
     cursor: pointer;
+    color: var(--beige);
+
+}
+
+.sidebar:hover #btn {
+    color: var(--green);
 }
 
 .sidebar.active #btn {
@@ -50,7 +55,7 @@
 
 
 .sidebar .top .logo {
-    color: #fff;
+    color: var(--beige);
     display: flex;
     height: 50px;
     width: 100%;
@@ -154,6 +159,7 @@
 }
 
 .sidebar ul li:hover .tooltip {
+    background-color: var(--green);
     opacity: 1;
 }
 
