@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--beige);
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Logo */
+.m-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-h1 {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+
+/* Form*/
+.m-form {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--text-font);
+}
+
+.items-login {
+    width: 550px;
+    display: flex;
+}
+
+.h2-login {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+
+
+.label-form {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--blue);
+}
+
+.input-form {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--sky-blue);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.button-form {
+    background-color: var(--blue);
+    color: var(--beige);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--secondary-font);
+}
+
+.button-form:hover {
+    background-color: var(--green);
+}

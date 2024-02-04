@@ -8,6 +8,43 @@
     <title>Login</title>
 </head>
 <body>
+
+    <header>
+        <div class="logo">
+            <img src="/assets/resources/logo.svg" alt="logo" height="100px" width="100px">
+            <h1 class="logo-h1">Contacly</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="m-form">
+            <div>
+                <img src="/assets/resources/img/login/login.png" alt="login-img" width="400px" height="200px">
+            </div>
+
+            <div class="items-login">
+                <div>
+                    <h2 class="h2-login">Login</h2>
+                    <form class="form" action="/login" method="post">
+                        <div class="container-username">
+                            <label class="label-form" for="username">Email:</label><br>
+                            <input class="input-form" type="text" id="email" name="email" placeholder="contacly@example.com" required>   
+                        </div>
+                        <div class="container-password">
+                            <label class="label-form" for="password">Password:</label><br>
+                            <input class="input-form" type="password" id="password" name="password" placeholder="*************" required>    
+                        </div>
+                        <div>
+                            <input class="button-form" type="submit" value="Login">
+                        </div>
+                    </form>    
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="/assets/scripts/script-login.js"></script>
     
 </body>
 </html>
