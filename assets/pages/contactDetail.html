@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Detalles del contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Detalles del contacto</h1>
-    <p>Nombre: <span id="nombre"></span></p>
-    <p>Apellido: <span id="apellido"></span></p>
-    <p>Dirección: <span id="direccion"></span></p>
-    <p>Email: <span id="email"></span></p>
-    <p>Fecha de nacimiento: <span id="fechaNacimiento"></span></p>
-    <p>Teléfono: <span id="telefono"></span></p>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const id = parseInt(params.get("id"));
+    <h2><span id="contact-name"></span></h2>
+    <p>Teléfono: <span id="contact-phone"></span></p>
+    <p>Correo electrónico: <span id="contact-email"></span></p>
 
-        const contacto = contactos[id];
 
-        document.getElementById("name").textContent = contact.name;
-        document.getElementById("apellido").textContent = contacto.apellido;
-        document.getElementById("direccion").textContent = contacto.direccion;
-        document.getElementById("email").textContent = contacto.email;
-        document.getElementById("fechaNacimiento").textContent = contacto.fechaNacimiento;
-        document.getElementById("telefono").textContent = contacto.telefono;
-    </script>
 
     <script src="/assets/scripts/script-contact.js"></script>
+    <script src="/assets/scripts/script-contact-detail.js"></script>
+    
 </body>
 </html>

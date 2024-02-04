@@ -10,28 +10,45 @@ sidebarButton.onclick = function () {
 // Contact cards
 const contacts = [
     {
-        "name": "Ana",
-        "lastName": "Pérez",
-        "address": "Calle Mayor 123",
-        "email": "ana.perez@ejemplo.com",
-        "birthDate": "1980-01-01",
+        "name": "Oscar",
+        "lastName": "José",
+        "address": "Zona 10, Guatemala",
+        "email": "oscar@example.com",
+        "birthDate": "22/08/2006",
         "phoneNumber": "+502 43568765"
 
     },
     {
-        "name": "Juan",
-        "lastName": "García",
-        "address": "Calle del Sol 456",
-        "email": "juan.garcia@ejemplo.com",
-        "birthDate": "1985-02-02",
-        "phoneNumber": "+502 12345678"
+        "name": "Valerie",
+        "lastName": "Pacay",
+        "address": "Zona 9, Guatemala",
+        "email": "valerie@example.com",
+        "birthDate": "22/09/2007",
+        "phoneNumber": "+502 34567834"
     },
     {
-        "name": "Pedro",
-        "lastName": "López",
-        "address": "Calle de la Luna 789",
-        "email": "pedro.lopez@ejemplo.com",
-        "birthDate": "1990-03-03",
+        "name": "Ottoniel",
+        "lastName": "Menéndez",
+        "address": "Zona 7, Guatemal",
+        "email": "ottoniel@example.com",
+        "birthDate": "28/10/2006",
+        "phoneNumber": "+502 09784576"
+    }
+    ,
+    {
+        "name": "Angel",
+        "lastName": "Méndez",
+        "address": "Zona 3, Guatemal",
+        "email": "angel@example.com",
+        "birthDate": "07-12-2005",
+        "phoneNumber": "+502 45764312"
+    },
+    {
+        "name": "José",
+        "lastName": "Soto",
+        "address": "Zona 1, Guatemal",
+        "email": "jose@example.com",
+        "birthDate": "16/11/2006",
         "phoneNumber": "+502 12345678"
     }
 ];
@@ -47,7 +64,7 @@ function showContact(contact, index) {
     nombreCompleto.textContent = `${contact.name} ${contact.lastName}`;
 
     const telefono = document.createElement("p");
-    telefono.textContent = `Teléfono: ${contact.phoneNumber}`;
+    telefono.textContent = `${contact.phoneNumber}`;
 
     contactCard.appendChild(nombreCompleto);
     contactCard.appendChild(telefono);
@@ -56,12 +73,3 @@ function showContact(contact, index) {
 }
 
 contacts.forEach(showContact);
-
-
-const contactCards = document.querySelectorAll(".tarjeta-contacto");
-
-contactCards.forEach((card, index) => {
-    card.addEventListener("click", () => {
-        window.location.href = `contactDetail.html?id=${index}`;
-    });
-});
