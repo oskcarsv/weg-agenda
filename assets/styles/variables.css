@@ -1,11 +1,17 @@
-
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;500;600&family=Prompt:wght@300;500&display=swap');
+  /*Variables*/
 :root {
     /*Palette color*/
-    --celeste: #C9D7DD;
-    --beige: #FFF3CF;
+    --sky-blue: #C9D7DD;
+    --beige: #FFFBF5;
     --green: #D7E5CA;
     --yellow: #F9F3CC;
-    --blue: #102C57;
+    --blue: #27374D;
 
-    --backround-color: #f5f5f5;
+    /*Fonts*/
+    --primary-font: 'Prompt', sans-serif;
+    --secondary-font: 'Hind', sans-serif;
+    --text-font: 'Hind', sans-serif;
 }
+
