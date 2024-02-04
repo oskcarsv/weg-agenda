@@ -53,11 +53,12 @@ body {
 .login {
     margin-top: 50px;
     padding: 10px 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #d0cbcb;
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
+    background-color: var(--green);
 }
 
 .login a {

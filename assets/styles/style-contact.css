@@ -76,13 +76,14 @@
     margin: 1rem 0;}
 
 .user p {
-    color: #fff;
+    color: var(--beige);
     opacity: 1;
     margin-left: 1rem;
 }
 
 .bold {
     font-family: var(--primary-font);
+    color: var(--beige);
     font-size: 20px;
     font-weight: 600;
 }
@@ -110,7 +111,7 @@
 }
 
 .sidebar ul li a {
-    color: #fff;
+    color: var(--beige);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -118,7 +119,7 @@
 }
 
 .sidebar ul li a:hover {
-    background-color: #fff;
+    background-color: var(--green);
     color: #12171e;
 }
 
@@ -162,7 +163,7 @@
 
 .main-content {
     position: absolute;
-    background-color: #eee;
+    background-color: var(--beige);
     min-height: 100vh;
     top: 0;
     left: 80px;
