@@ -191,6 +191,10 @@
     font-size: 40px;
 }
 
+.s-title img {
+    margin-right: 40px;
+}
+
 
 /* Contacts */
 .tarjeta-contacto {
