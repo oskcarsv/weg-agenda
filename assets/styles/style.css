@@ -125,6 +125,11 @@ body {
     justify-content: space-around;
 }
 
+.logout {
+    margin-top: 600px;
+}	
+
+
 /* Footer */
 
 .container-footer {
