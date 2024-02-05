@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/variables.css">
     <link rel="stylesheet" href="/assets/styles/style-contact.css">
+    <link rel="stylesheet" href="/assets/styles/style-login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
     <title>Contacly</title>
 </head>
@@ -49,7 +50,7 @@
                 <span class="tooltip">Todo</span>
             </li>
             <li>
-                <a href="/assets/pages/add.html">
+                <a href="#">
                     <i class='bx bx-user-plus'></i>
                     <span class="nav-item">Add</span>
                 </a>
@@ -74,42 +75,44 @@
 
     <main class="main-content">
         <section class="s-title">
-            <img src="/assets/resources/img/home/contacts.svg" alt="contacts-img" width="200px" height="200px">
-            <h1>Contacts</h1>
+            <img src="/assets/resources/img/add/add.gif" alt="add-img" width="250px" height="200px">
+            <h1>Add new contact</h1>
         </section>
 
-        <section class="s-contacts">
-            <div class="tarjeta-contacto" id="contacto">
-                <div class="content">
-                    <h3>Oscar Morales</h3>
-                    <p>+502 453433278</p>
+        <section class="m-form-m">
+            <form class="form" action="/login" method="post">
+                <div class="container">
+                    <label class="label-form" for="name">Name:</label>
+                    <input class="input-form-a" type="text" name="email" placeholder="Ana" required>   
                 </div>
-            </div>
-            <div class="tarjeta-contacto" id="contacto1">
-                <div class="content">
-                    <h3>Valerie Pacay</h3>
-                    <p>+502 34567834</p>
+                <div class="container">
+                    <label class="label-form" for="lastname">Lastname:</label>
+                    <input class="input-form-a" type="text" name="email" placeholder="Pérez" required>   
                 </div>
-            </div>
-            <div class="tarjeta-contacto" id="contacto2">
-                <div class="content">
-                    <h3>Ottoniel Menéndez</h3>
-                    <p>+502 09784576</p>
+                <div class="container">
+                    <label class="label-form" for="phone">Phone number:</label>
+                    <input class="input-form-a" type="text" name="email" placeholder="+502 00000000" required>   
                 </div>
-            </div>
-            <div class="tarjeta-contacto" id="contacto3">
-                <div class="content">
-                    <h3>Angel Méndez</h3>
-                    <p>+502 45764312</p>
-                </div class="content">
-            </div>
-            <div class="tarjeta-contacto" id="contacto4">
-                <div class="content">
-                    <h3>José Soto</h3>
-                    <p>+502 12345678</p>
+                <div class="container">
+                    <label class="label-form" for="email">Email:</label>
+                    <input class="input-form-a" type="text" name="email" placeholder="contacly@example.com" required>   
                 </div>
-            </div>
+                <div class="container">
+                    <label class="label-form" for="adress">Adress:</label>
+                    <input class="input-form-a" type="text" name="adress" placeholder="Zone 1, Guatemala">   
+                </div>
+                <div class="container">
+                    <label class="label-form" for="birthday">Birthday:</label>
+                    <input class="input-form-a" type="text" name="birthday" placeholder="22/08/2006">   
+                </div>
+                <div class="b-m">
+                    <div class="but">
+                        <a href="contact.html">Add</a>
+                    </div>
+                </div>
+            </form>
         </section>
+    
     </main>
     
     <script src="/assets/scripts/script-contact.js"></script>  

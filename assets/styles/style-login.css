@@ -52,6 +52,15 @@ header {
     font-family: var(--text-font);
 }
 
+.m-form-m {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: space-around;
+    font-family: var(--text-font);
+}
+
+
 .items-login {
     width: 550px;
     display: flex;
@@ -70,6 +79,7 @@ header {
     font-family: var(--primary-font);
     font-size: 20px;
     color: var(--blue);
+    margin-right: 5px;
 }
 
 .input-form {
@@ -116,4 +126,54 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+.container {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-form-a {
+    height: 30px;
+    background-color: var(--green);
+    font-family: var(--primary-font);
+    font-size: 12px;
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.but {
+    width: 150px;
+    padding: 10px 20px;
+    border: 1px solid #d0cbcb;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--green);
+}
+
+.but a {
+    font-family: var(--primary-font);
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.but:hover {
+    background-color: var(--blue);
+    color: var(--beige);
+}
+
+.but a:hover {
+    color: var(--beige);
+}
+
+
+.b-m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
