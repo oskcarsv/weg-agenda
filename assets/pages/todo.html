@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/variables.css">
     <link rel="stylesheet" href="/assets/styles/style-contact.css">
+    <link rel="stylesheet" href="/assets/styles/style-todo.css">
     lin
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
     <title>Contacly</title>
@@ -36,7 +37,7 @@
                 <span class="tooltip">Home</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/assets/pages/favorites.html">
                     <i class='bx bx-star' ></i>
                     <span class="nav-item">Favorites</span>
                 </a>
@@ -80,11 +81,37 @@
         </section>
 
         <section class="s-todo">
-
+            <div id="app">
+                <div class="app-tittle">
+                    <h1 class="title-h1">Tasks</h1>
+                </div>
+                <div class="controles">
+                    <input type="text" id="nueva-tarea" placeholder="New Task...">
+                    <select id="prioridad">
+                        <option value="baja">Low</option>
+                        <option value="media">Medium</option>
+                        <option value="alta">High</option>
+                    </select>
+                    <button id="agregar-tarea">Add</button>
+                </div>
+                <ul id="lista-tareas">
+                    <li class="no-started prioridad-baja">
+                        <div class="c-text">
+                            <input type="checkbox" class="marcar-tarea">
+                            <span class="texto-tarea">Tarea 1</span>
+                        </div>
+                        <div class="c-i">  
+                            <button class="boton-editar">
+                                <img src="/assets/resources/img/todo/trash.svg" alt="">
+                            </button>                            
+                        </div>
+                      </li>                                     
+                </ul>
+            </div>
         </section>
     </main>
     
-    <script src="/assets/scripts/script-contact.js"></script>  
+    <script src="/assets/scripts/script-todo.js"></script>  
 </body>
 
 </html>
