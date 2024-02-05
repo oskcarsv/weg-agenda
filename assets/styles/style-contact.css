@@ -190,6 +190,7 @@
     justify-content: center;
     font-family: var(--primary-font);
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .s-title img {
@@ -221,4 +222,17 @@
 
 .img-favorite {
     margin-right: 20px;
+}
+
+.gift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
