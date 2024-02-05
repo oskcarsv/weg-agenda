@@ -53,23 +53,17 @@ const contacts = [
     }
 ];
 
-const contactsContainer = document.getElementById("contactos");
 
-function showContact(contact, index) {
-    const contactCard = document.createElement("div");
-    contactCard.classList.add("tarjeta-contacto", "tarjeta-contacto--animacion");
-    contactCard.dataset.id = index;
+/* Contacto 1*/
+const contactoDiv = document.getElementById("contacto1");
 
-    const nombreCompleto = document.createElement("h3");
-    nombreCompleto.textContent = `${contact.name} ${contact.lastName}`;
+contactoDiv.addEventListener("click", function () {
+    window.location.href = "/assets/pages/contactDetail.html";
+});
 
-    const telefono = document.createElement("p");
-    telefono.textContent = `${contact.phoneNumber}`;
+/* Contacto 2*/
+const contactoDiv2 = document.getElementById("contacto2");
 
-    contactCard.appendChild(nombreCompleto);
-    contactCard.appendChild(telefono);
-
-    contactsContainer.appendChild(contactCard);
-}
-
-contacts.forEach(showContact);
+contactoDiv2.addEventListener("click", function () {
+    window.location.href = "/assets/pages/contactDetail2.html";
+});

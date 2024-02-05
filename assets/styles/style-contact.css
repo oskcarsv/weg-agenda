@@ -204,6 +204,7 @@
 }
 
 .tarjeta-contacto {
+    font-family: var(--primary-font);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,25 +212,10 @@
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    width: 100%;
     height: 100px;
     border-radius: 25px;
 }
 
-.tarjeta-contacto--animacion:hover {
+.tarjeta-contacto:hover {
     background-color: var(--green);
-}
-
-
-h3 {
-    margin-top: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
 }
