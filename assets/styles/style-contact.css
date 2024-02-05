@@ -193,6 +193,14 @@
     margin-bottom: 10px;
 }
 
+.s-profile {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .s-title img {
     margin-right: 40px;
 }
